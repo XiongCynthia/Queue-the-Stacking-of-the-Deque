@@ -1,8 +1,5 @@
 from abc import ABCMeta, abstractmethod
 
-# DO NOT CHANGE ANYTHING IN THIS FILE
-# (but look into what these things mean)
-
 class Deque(metaclass=ABCMeta):
 
   @classmethod
@@ -45,4 +42,3 @@ class Deque(metaclass=ABCMeta):
   def peek_back(self):
     raise NotImplementedError
 
-# DO NOT CHANGE ANYTHING IN THIS FILE
