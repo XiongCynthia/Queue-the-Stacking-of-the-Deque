@@ -1,10 +1,10 @@
 # Queue-the-Stacking-of-the-Deque
 
-Array_Deque.py and Linked_List_Deque.py are two different deque implementations with identical functionalities. Stack.py and Queue.py are a stack and queue implementations, respectively, that can use a deque implementation from Array_Deque.py or Linked_List_Deque.py as the storage medium.
+Array_Deque.py and Linked_List_Deque.py are two different deque implementations with identical functionalities. Stack.py and Queue.py are stack and queue implementations, respectively, that can use a deque implementation from Array_Deque.py or Linked_List_Deque.py as the storage medium.
 
 ---
 
-## Deque Performances
+## Performance Analysis for Array_Deque and Linked_List_Deque
 
 In the Array_Deque implementation, **\_\_init\_\_**, **\_\_len\_\_**, **pop_front**, **peek_front**, **pop_back**, and **peek_back** all operate in constant time since they only have operations involving getting values, assignment, instantiation, comparison, arithmetic, if-else statements, and raising errors. No particular case can affect the methods’ runtimes in some significant way.
 
@@ -15,7 +15,7 @@ The methods **\_\_str\_\_** from both implementations and **\_\_grow** from Arra
 The __grow method doubles the array capacity instead of simply increasing it by one cell. If this latter strategy were used, when adding multiple elements, it would require moving every element into a larger array one by one as many times as there are new elements to add, meaning any case where multiple elements are to be added would lead to quadratic time instead of linear time. Doubling array capacity would provide pre-allocated spaces to add new elements, significantly diminishing how often elements are relocated when adding a large quantity of new ones.
 
 
-## Stack and Queue Performances
+## Performance Analysis for Stack and Queue
 
 The runtime of certain methods may depend on whether the Array_Deque or Linked_List_Deque is used. The **\_\_str\_\_** method always operates on linear time, and the **\_\_len\_\_**, **pop**, **dequeue**, and **peek** methods always operate in constant time. The **push** and **enqueue** methods may operate in linear time in certain cases only when using the Array_Deque implementation, specifically when the capacity of the stack or queue object is full, which is when it invokes the __grow method that runs in linear time. They always operate in constant time otherwise and in the Linked_List_Deque implementation.
 
