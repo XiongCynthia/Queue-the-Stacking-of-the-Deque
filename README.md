@@ -1,4 +1,4 @@
-# Queue-the-Stacking-of-the-Deque
+# Queue the Stacking of the Deque
 
 [Array_Deque.py](https://github.com/XiongCynthia/Queue-the-Stacking-of-the-Deque/blob/main/Array_Deque.py) and [Linked_List_Deque.py](https://github.com/XiongCynthia/Queue-the-Stacking-of-the-Deque/blob/main/Linked_List_Deque.py) are two different deque implementations with identical functionalities. [Stack.py](https://github.com/XiongCynthia/Queue-the-Stacking-of-the-Deque/blob/main/Stack.py) and [Queue.py](https://github.com/XiongCynthia/Queue-the-Stacking-of-the-Deque/blob/main/Queue.py) are stack and queue implementations, respectively, that can use a deque implementation from Array_Deque.py or Linked_List_Deque.py as the storage medium.
 
